@@ -3,12 +3,18 @@
 # Start the timer
 start_time=$(date +%s)
 
-# Get APEX
-curl -o apex-latest.zip https://download.oracle.com/otn_software/apex/apex-latest.zip
+# Get APEX 22.2/latest
+# curl -o apex-latest.zip https://download.oracle.com/otn_software/apex/apex-latest.zip
+curl -o apex-latest.zip https://download.oracle.com/otn_software/apex/apex_22.2.zip
 
 # Enter APEX Folder
 unzip -q apex-latest.zip
 rm apex-latest.zip
+cd apex
+
+# Enter APEX Folder
+unzip -q apex_22.2.zip
+rm apex_22.2.zip
 cd apex
 
 # Install APEX
@@ -34,7 +40,7 @@ BEGIN
     
     APEX_UTIL.create_user(
         p_user_name       => 'ADMIN',
-        p_email_address   => 'me@example.com',
+        p_email_address   => 'lior2012.al@gmail.com',
         p_web_password    => 'OrclAPEX1999!',
         p_developer_privs => 'ADMIN' );
         
@@ -64,10 +70,10 @@ dnf install java-17-openjdk -y
 EOF
 
 # Modify sudoers
-su - <<EOF
-echo "Defaults !lecture" | sudo tee -a /etc/sudoers
-echo "oracle ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers
-EOF
+    su - <<EOF
+    echo "Defaults !lecture" | sudo tee -a /etc/sudoers
+    echo "oracle ALL=(ALL) NOPASSWD: ALL" | sudo tee -a /etc/sudoers
+    EOF
 
 # Make ORDS Folders
 su - <<EOF
