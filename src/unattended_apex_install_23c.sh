@@ -34,7 +34,7 @@ BEGIN
     
     APEX_UTIL.create_user(
         p_user_name       => 'ADMIN',
-        p_email_address   => 'lior2012.al@gmail.com',
+        p_email_address   => 'XYZ@gmail.com',
         p_web_password    => 'OrclAPEX1999!',
         p_developer_privs => 'ADMIN' );
         
