@@ -3,15 +3,9 @@
 # Start the timer
 start_time=$(date +%s)
 
-# Get APEX 22.2/latest
-# curl -o apex-latest.zip https://download.oracle.com/otn_software/apex/apex-latest.zip
+# Get APEX 22.2/latest 
 curl -o apex-latest.zip https://download.oracle.com/otn_software/apex/apex_22.2.zip
-
-# Enter APEX Folder
-# unzip -q apex-latest.zip
-# rm apex-latest.zip
-# cd apex
-
+ 
 # Enter APEX Folder
 unzip -q apex_22.2.zip
 rm apex_22.2.zip
