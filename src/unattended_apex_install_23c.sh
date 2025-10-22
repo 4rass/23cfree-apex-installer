@@ -4,7 +4,7 @@
 start_time=$(date +%s)
 
 # Get APEX 22.2/latest 
-curl -o apex-latest.zip https://download.oracle.com/otn_software/apex/apex_22.2.zip
+curl -o apex_22.2.zip https://download.oracle.com/otn_software/apex/apex_22.2.zip
  
 # Enter APEX Folder
 unzip -q apex_22.2.zip
