@@ -71,8 +71,8 @@ GRANT INHERIT PRIVILEGES ON USER ORDS_PUBLIC_USER TO xx_lior;
 ---------------------------------------------------------------------------------
 
 -- /* Connect as SYS, xx_hrms is a existing user. */
--- GRANT INHERIT PRIVILEGES ON USER ORDS_METADATA TO xx_lior;
--- GRANT INHERIT PRIVILEGES ON USER ORDS_PUBLIC_USER TO xx_lior;
+GRANT INHERIT PRIVILEGES ON USER ORDS_METADATA TO xx_lior;
+GRANT INHERIT PRIVILEGES ON USER ORDS_PUBLIC_USER TO xx_lior;
 -- /* Connect as xx_lior */
  
 /* Connect as xx_lior */
